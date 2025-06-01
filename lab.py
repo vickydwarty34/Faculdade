@@ -7,10 +7,10 @@ from scipy.odr import Model, RealData, ODR
 
 
 # === Leitura dos dados do Excel ===
-arquivo_excel = r'C:\Users\Victória\Documents\dados.xlsx'  
+arquivo_excel = r'C:\Users\Victória\Documents\dados.xlsx'  #Altere pelo local do seu arquivo
 dados = pd.read_excel(arquivo_excel)
 
-# === Extração dos dados ===
+# === Extração dos dados ===                      #coloque pelo nome que está o seu arquivo do excel
 R = dados['r'].values
 R_err = dados['erro r'].values
 l = dados['l'].values
